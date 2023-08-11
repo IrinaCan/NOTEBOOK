@@ -22,7 +22,7 @@ class UpdateTest extends TestCase
             'phone' => '0123',
             'email' => 'sallysallymain@yandex.ru',
             'birthday' => '2000-09-08',
-            'foto' => 'sally.png'
+            'foto' => 'image/sally.png'
         ]);
 
         $response->assertStatus(200);
