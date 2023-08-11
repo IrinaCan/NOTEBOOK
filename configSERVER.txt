@@ -1,0 +1,15 @@
+<VirtualHost notebook.com:80>
+ DocumentRoot C:\xampp2\htdocs\notebook\public
+ ServerName notebook.com
+ ServerAdmin admin@notebook.com
+ <Directory "C:\xampp2\htdocs\notebook\public">
+  Options Indexes FollowSymLinks
+  Allow from all
+  Require all granted
+  IndexIgnore /
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . index.php
+ </Directory>
+</VirtualHost>
