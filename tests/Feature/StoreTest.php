@@ -21,7 +21,7 @@ class StoreTest extends TestCase
             'phone' => '357357357',
             'email' => 'sallysallymain@yandex.ru',
             'birthday' => '2000-09-08',
-            'foto' => 'sally.png'
+            'foto' => 'image/sally.png'
         ]);
 
         $response
