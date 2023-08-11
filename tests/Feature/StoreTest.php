@@ -15,10 +15,6 @@ class StoreTest extends TestCase
      */
     public function test_example()
     {
-        //$response = $this->get('/store');
-
-        //$response->assertStatus(201);
-
         $response = $this->postJson('store', [
             'name' => 'Sally Pretty Main',
             'company' => 'Pretty',
